@@ -3,7 +3,7 @@ import os.path
 from xml.etree import ElementTree as ET
 from collections import defaultdict
 
-from csv import CSV
+from csv2xml.csv import CSV
 
 TAG = "node"
 

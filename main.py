@@ -1,6 +1,6 @@
 
-from csv import CSV
-from write_xml import WriteXML
+from csv2xml.csv import CSV
+from csv2xml.write_xml import WriteXML
 
 
 def csv2xml(csv_path: str):
@@ -10,4 +10,4 @@ def csv2xml(csv_path: str):
 
 
 if __name__ == '__main__':
-    csv2xml("/Users/jameszhang/Documents/webull_testcases/webull_AMS2.0_testcase_upload_csv.csv")
+    csv2xml("E:\document\mac_doc\webull_testcases\hcm_employee_testcases.csv")
