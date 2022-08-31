@@ -62,7 +62,7 @@ class XMLParser:
 
 
 if __name__ == '__main__':
-    a = XMLParser("文本文件.mm")
+    a = XMLParser("E:\document\mac_doc\webull_testcases\hcm_employee_testcases.mm")
     res = a.parse_xml()
     for i in res:
         print(i)
