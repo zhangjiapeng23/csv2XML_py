@@ -99,16 +99,3 @@ class WriteCSV:
 
         return [field[1] for field in csv_field_position]
 
-
-if __name__ == '__main__':
-    additional_info = {
-        "assignee": "zhangjiapeng",
-        "reporter": "zhangjiapeng",
-        "issue_type": "Test",
-        "component": "AMS",
-        "test_type": "Manual",
-        "data": "无",
-        "test_repository_path": "AMS/常规/2022/0830"
-    }
-    w = WriteCSV("", **additional_info)
-    w.write_csv()

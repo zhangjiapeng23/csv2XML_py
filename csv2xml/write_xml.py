@@ -10,7 +10,8 @@ TAG = "node"
 
 class WriteXML:
 
-    def __init__(self, csv: CSV):
+    def __init__(self, csv_path: str):
+        csv = CSV(csv_path)
         self._node_list = csv.get_node_tree()
         self._dist = csv.file_dir
         # xml 的根节点，free mind 的固定格式
