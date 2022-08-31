@@ -43,9 +43,3 @@ class TestCase:
     def __str__(self):
         return f"({self.case_id}) 【{self.module}】{self.summary}"
 
-
-if __name__ == '__main__':
-    case1 = TestCase("1", "1", [], [])
-    case2 = TestCase("2", "2", [], [])
-    print(case1)
-    print(case2)
