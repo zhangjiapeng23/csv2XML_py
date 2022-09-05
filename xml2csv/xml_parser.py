@@ -1,7 +1,7 @@
 from xml.etree import ElementTree as ET
 from xml.etree.ElementTree import Element
 
-from testcase import TestCase
+from xml2csv.testcase import TestCase
 
 
 class XMLParser:

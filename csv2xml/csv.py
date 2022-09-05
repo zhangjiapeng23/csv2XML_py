@@ -1,7 +1,7 @@
 import os.path
 import re
 
-from node import Node
+from csv2xml.node import Node
 
 
 class CSV:

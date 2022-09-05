@@ -1,6 +1,6 @@
 import os.path
 
-from xml_parser import XMLParser
+from xml2csv.xml_parser import XMLParser
 
 
 class WriteCSV:
@@ -28,7 +28,8 @@ class WriteCSV:
     def write_csv(self):
         # 读取模版
         csv_line_template = ""
-        with open("template/testcase_template.csv", encoding='utf-8') as f:
+        template_path = os.path.join(os.path.dirname(__file__), "template", "testcase_template.csv" )
+        with open(template_path, encoding='utf-8') as f:
             csv_title = f.readline()
 
         csv_field_list = csv_title.split(",")
