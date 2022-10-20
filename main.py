@@ -17,11 +17,12 @@ def xml2csv(xml_path: str):
         "component": "PMS-权限管理",
         "test_type": "Manual",
         "data": "无",
-        "test_repository_path": "HCM/常规/2022/0905常规迭代-HR-法人主体数据来源规则修改"
+        "test_repository_path": "HCM/常规/2022/权限优化"
     }
     w = WriteCSV(xml_path, **additional_info)
     w.write_csv()
 
 
 if __name__ == '__main__':
-    xml2csv("E:\document\mac_doc\webull_testcases\PMS_常规迭代_0905.mm")
+    xml2csv("E:\document\mac_doc\webull_testcases\测试颜色.mm")
+    # csv2xml("E:\document\mac_doc\webull_testcases\PMS-系统与数据权限.csv")

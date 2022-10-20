@@ -81,7 +81,7 @@ class WriteCSV:
                     expected_results += "\n\n"
                 expected_results += "\""
 
-                case_line = csv_line_template.format(case_id=case.case_id, summary=f"【{case.module}】{case.summary}",
+                case_line = csv_line_template.format(case_id=case.case_id, summary=f"\"【{case.module}】{case.summary}\"",
                                                      assignee=assignee, reporter=reporter, issue_type=issue_type,
                                                      component=component, precondition=precondition,
                                                      test_type=test_type, steps=steps, data=data,
